@@ -1,31 +1,8 @@
 # Variant Webhook API (v2)
 
-Base URL:
+## Get Variant
 
-- PRODUCTION: `https://redotterfarms.health`
-- STAGING: `https://temp.redotterfarms.in`
-
----
-
-## Authentication
-
-All requests require the following header:
-
-| Header      | Required | Description                                      |
-| ----------- | -------- | ------------------------------------------------ |
-| `x-api-key` | Yes      | API key used to authenticate the webhook request |
-
-Example:
-
-```http
-x-api-key: YOUR_API_KEY
-```
-
----
-
-# Get Variant
-
-Retrieve variant information using its SKU.
+Retrieve product information to which the SKU is linked to.
 
 ### Endpoint
 
@@ -33,30 +10,11 @@ Retrieve variant information using its SKU.
 GET /webhook/v2/variant/{sku}
 ```
 
-### Full URL
-
-```text
-/webhook/v2/variant/{sku}
-```
-
-### Headers
-
-```http
-x-api-key: YOUR_API_KEY
-```
-
 ### Path Parameters
 
 | Parameter | Type     | Required | Description                    |
 | --------- | -------- | -------- | ------------------------------ |
 | `sku`     | `string` | Yes      | SKU of the variant to retrieve |
-
-### Example Request
-
-```http
-GET /webhook/v2/variant/{sku}
-x-api-key: YOUR_API_KEY
-```
 
 ### Example Success Response
 
@@ -209,7 +167,7 @@ x-api-key: YOUR_API_KEY
 
 ---
 
-# Update Variant
+## Update Variant
 
 Update variant information using its SKU.
 
