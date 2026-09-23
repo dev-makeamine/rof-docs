@@ -4,17 +4,39 @@ This repository contains documentation related to APIs provided by the ROF Websi
 
 ## Available APIs
 
-### Variant API (v2)
+### Variant API
 
 Documentation for retrieving and updating product variants using their SKU.
 
-* **Get Variant**
-* **Update Variant**
-* **API Authentication**
-* **Request and Response Examples**
-* **Validation Error Responses**
+- **Get Variant**
+- **Update Variant**
+- **API Authentication**
+- **Request and Response Examples**
+- **Validation Error Responses**
 
-👉 **[View Variant API (v2) Documentation](./api/variant-v2.md)**
+👉 **[View Variant API Documentation](./api/variant.md)**
+
+### Subscriptions API
+
+Documentation for retrieving and updating subscriptions using their id.
+
+- **Get Subscriptions**
+- **Update Subscription Status**
+- **API Authentication**
+- **Request and Response Examples**
+- **Validation Error Responses**
+
+👉 **[View Subscription API Documentation](./api/subscription.md)**
+
+---
+
+## Available Documentations
+
+### Order Docs
+
+Documentation for understanding different order types and how razorpay payment can be verified using the key values sent by website
+
+👉 **[View Order Documentation](./docs/order.md)**
 
 ---
 
@@ -25,6 +47,10 @@ Documentation for retrieving and updating product variants using their SKU.
 ├── README.md
 └── api/
     └── variant-v2.md
+    └── subscription.md
+└── docs/
+    └── order.md
+
 ```
 
 ## Environments
@@ -38,9 +64,9 @@ Documentation for retrieving and updating product variants using their SKU.
 
 All API requests require authentication.
 
-### Variant API (v2)
+### API (v2)
 
-The Variant API (v2) uses an API key for authentication.
+The API (v2) uses an API key for authentication.
 
 ```http
 x-api-key: YOUR_API_KEY
@@ -53,5 +79,3 @@ Legacy API endpoints use `API_SECRET` for authentication.
 ```http
 API_SECRET: YOUR_API_SECRET
 ```
-
-For complete endpoint details, request parameters, request examples, responses, and error handling, see the **[Variant API (v2) documentation](./api/variant-v2.md)**.
